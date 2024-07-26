@@ -1,0 +1,30 @@
+// Ref: ../src/types/mod.rs
+
+array Hash [byte; 32];
+
+vector Bytes <byte>;
+option BytesOpt (Bytes);
+
+table SmtChange {
+    key: Bytes,
+    old_value: BytesOpt,
+    new_value: BytesOpt,
+}
+vector SmtChanges <SmtChange>;
+
+table SmtUpdate {
+    new_root: Hash,
+    changes: SmtChanges,
+    proof: Bytes,
+}
+
+table KeyValue {
+    key: Bytes,
+    value: BytesOpt,
+}
+vector KeyValues <KeyValue>;
+
+table DataWithProof {
+    data: KeyValues,
+    proof: Bytes,
+}

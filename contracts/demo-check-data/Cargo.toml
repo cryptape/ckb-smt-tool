@@ -1,0 +1,8 @@
+[package]
+name = "demo-check-data"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+ckb-std = "0.15.3"
+ckb-smt-tool = { path = "../../crates/ckb-smt-tool", default-features = false }

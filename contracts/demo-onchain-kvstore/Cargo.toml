@@ -1,0 +1,9 @@
+[package]
+name = "demo-onchain-kvstore"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+ckb-std = "0.15.3"
+ckb-smt-tool = { path = "../../crates/ckb-smt-tool", default-features = false }
+ckb-hash = { version = "0.112.1", default-features = false, features = ["ckb-contract"] }

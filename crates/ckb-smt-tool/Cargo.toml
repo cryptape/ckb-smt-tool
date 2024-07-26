@@ -1,0 +1,24 @@
+[package]
+name = "ckb-smt-tool"
+version = "0.1.0"
+authors = ["Boyu Yang <yangby@cryptape.com>"]
+edition = "2021"
+license = "MIT"
+description = "A tool to integrate SMT into CKB contracts easier."
+homepage = "https://github.com/yangby-cryptape/ckb-smt-tool"
+repository = "https://github.com/yangby-cryptape/ckb-smt-tool"
+
+[dependencies]
+sparse-merkle-tree = { version = "0.6.1", default-features = false }
+molecule = { version = "=0.7.5", default-features = false }
+ckb-std = "0.15.3"
+ckb-hash = { version = "0.112.1", default-features = false, features = ["ckb-contract"] }
+thiserror = { version = "1.0", optional = true }
+
+[features]
+default = ["with-prover"]
+with-prover = [
+    "sparse-merkle-tree/std",
+    "molecule/std",
+    "thiserror",
+]
