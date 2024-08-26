@@ -1,12 +1,12 @@
 # CKB SMT Tool
 
 [![License]](#license)
-[![GitHub Actions]](https://github.com/yangby-cryptape/ckb-smt-tool/actions)
+[![GitHub Actions]](https://github.com/cryptape/ckb-smt-tool/actions)
 
 A tool to integrate SMT into CKB contracts easier.
 
 [License]: https://img.shields.io/badge/License-MIT-blue.svg
-[GitHub Actions]: https://github.com/yangby-cryptape/ckb-smt-tool/workflows/CI/badge.svg
+[GitHub Actions]: https://github.com/cryptape/ckb-smt-tool/workflows/CI/badge.svg
 
 ## Description
 

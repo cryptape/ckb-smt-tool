@@ -1,12 +1,12 @@
 [package]
 name = "ckb-smt-tool"
 version = "0.1.0"
-authors = ["Boyu Yang <yangby@cryptape.com>"]
+authors = ["Cryptape Technologies <contact@cryptape.com>"]
 edition = "2021"
 license = "MIT"
 description = "A tool to integrate SMT into CKB contracts easier."
-homepage = "https://github.com/yangby-cryptape/ckb-smt-tool"
-repository = "https://github.com/yangby-cryptape/ckb-smt-tool"
+homepage = "https://github.com/cryptape/ckb-smt-tool"
+repository = "https://github.com/cryptape/ckb-smt-tool"
 
 [dependencies]
 sparse-merkle-tree = { version = "0.6.1", default-features = false }
